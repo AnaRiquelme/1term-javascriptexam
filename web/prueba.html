@@ -1,0 +1,142 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script>
+            window.onload = aleatorio;
+            function aleatorio() {
+                var fila1 = new Array();
+                var fila2 = new Array();
+                var fila3 = new Array();
+                var fila4 = new Array();
+                var fila5 = new Array();
+                var fila6 = new Array();
+                var fila7 = new Array();
+                var fila8 = new Array();
+                var fila9 = new Array();
+
+                var result = "";
+                var fila1Res = "<table>";
+
+                for (var a = 1; a < 2; a++) {
+                    fila1Res += "<tr>";
+                    for (var m = 1; m < 10; m++) {
+                        var aleatorio = Math.floor(Math.random() * (9 - 1 + 1) + 1);
+
+                        fila1[m] = aleatorio;
+                        result = fila1[m];
+                        if (aleatorio != result) {
+                            fila1Res += "<td>";
+                            fila1Res += result;
+                            fila1Res += "</td>";
+                        } else {
+                            desecho = aleatorio;
+                        }
+                    }
+                    if (m == 10) {
+                        fila1Res += "</tr>";
+                    }
+
+                    for (var n = 1; n < 10; n++) {
+                        var aleatorio = Math.floor(Math.random() * (9 - 1 + 1) + 1);
+                        fila2[n] = aleatorio;
+                        fila1Res += "<td>";
+                        fila1Res += fila2[n];
+                        fila1Res += "</td>";
+                    }
+
+                    if (n == 10) {
+                        fila1Res += "</tr>";
+                    }
+
+                    for (var o = 1; o < 10; o++) {
+                        var aleatorio = Math.floor(Math.random() * (9 - 1 + 1) + 1);
+                        fila3[o] = aleatorio;
+                        fila1Res += "<td>";
+                        fila1Res += fila3[o];
+                        fila1Res += "</td>";
+                    }
+                    if (o == 10) {
+                        fila1Res += "</tr>";
+                    }
+
+                    for (var p = 1; p < 10; p++) {
+                        var aleatorio = Math.floor(Math.random() * (9 - 1 + 1) + 1);
+                        fila4[p] = aleatorio;
+                        fila1Res += "<td>";
+                        fila1Res += fila4[p];
+                        fila1Res += "</td>";
+                    }
+                    if (p == 10) {
+                        fila1Res += "</tr>";
+                    }
+
+                    for (var q = 1; q < 10; q++) {
+                        var aleatorio = Math.floor(Math.random() * (9 - 1 + 1) + 1);
+                        fila5[q] = aleatorio;
+                        fila1Res += "<td>";
+                        fila1Res += fila5[n];
+                        fila1Res += "</td>";
+                    }
+                    if (q == 10) {
+                        fila1Res += "</tr>";
+                    }
+
+                    for (var r = 1; r < 10; r++) {
+                        var aleatorio = Math.floor(Math.random() * (9 - 1 + 1) + 1);
+                        fila6[r] = aleatorio;
+                        fila1Res += "<td>";
+                        fila1Res += fila6[r];
+                        fila1Res += "</td>";
+                    }
+                    if (r == 10) {
+                        fila1Res += "</tr>";
+                    }
+
+                    for (var s = 1; s < 10; s++) {
+                        var aleatorio = Math.floor(Math.random() * (9 - 1 + 1) + 1);
+                        fila7[s] = aleatorio;
+                        fila1Res += "<td>";
+                        fila1Res += fila7[s];
+                        fila1Res += "</td>";
+                    }
+                    if (s == 10) {
+                        fila1Res += "</tr>";
+                    }
+
+                    for (var w = 1; w < 10; w++) {
+                        var aleatorio = Math.floor(Math.random() * (9 - 1 + 1) + 1);
+                        fila8[w] = aleatorio;
+                        fila1Res += "<td>";
+                        fila1Res += fila8[w];
+                        fila1Res += "</td>";
+                    }
+                    if (n == 10) {
+                        fila1Res += "</tr>";
+                    }
+                    for (var z = 1; z < 10; z++) {
+                        var aleatorio = Math.floor(Math.random() * (9 - 1 + 1) + 1);
+                        fila9[z] = aleatorio;
+                        fila1Res += "<td>";
+                        fila1Res += fila9[n];
+                        fila1Res += "</td>";
+                    }
+                    if (n == 10) {
+                        fila1Res += "</tr>";
+                    }
+                }
+                fila1Res += "</table>";
+
+                document.getElementById('aleatorioComplete').innerHTML = fila1Res;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="aleatorioComplete"></div>
+    </body>
+</html>

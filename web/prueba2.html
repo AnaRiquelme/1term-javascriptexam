@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script>
+            window.onload = aleatorio;
+            function aleatorio() {
+                var fila1 = new Array(5,1,6,3,4,8,9,7,2);
+                var fila2 = new Array(4,9,2,5,6,7,1,3,8);
+                var fila3 = new Array(7,3,8,9,2,1,6,5,4);
+                var fila4 = new Array(9,2,7,4,5,6,8,1,3);
+                var fila5 = new Array(1,8,5,2,7,3,4,6,9);
+                var fila6 = new Array(6,4,3,1,8,9,7,2,5);
+                var fila7 = new Array(2,6,4,7,9,5,3,8,1);
+                var fila8 = new Array(3,7,9,8,1,2,5,4,6);
+                var fila9 = new Array(8,5,1,6,3,4,2,9,7);
+
+                var result = "";
+                var fila1Res = "<table>";
+
+                for (var a = 1; a < 2; a++) {
+                    fila1Res += "<tr>";
+                    for (var m = 0; m < 9; m++) {
+                        fila1Res += "<td>";
+                          fila1Res += fila1[m];
+                          fila1Res += "</td>";
+                    }
+
+                    for (var n = 1; n < 10; n++) {
+                        var aleatorio = Math.floor(Math.random() * (9 - 1 + 1) + 1);
+                        fila2[n] = aleatorio;
+                       
+                    }
+
+                    
+
+                    for (var o = 1; o < 10; o++) {
+                        var aleatorio = Math.floor(Math.random() * (9 - 1 + 1) + 1);
+                        fila3[o] = aleatorio;
+                       
+                    }
+                    
+
+                    for (var p = 1; p < 10; p++) {
+                        var aleatorio = Math.floor(Math.random() * (9 - 1 + 1) + 1);
+                        fila4[p] = aleatorio;
+                       
+                    }
+                   
+
+                    for (var q = 1; q < 10; q++) {
+                        var aleatorio = Math.floor(Math.random() * (9 - 1 + 1) + 1);
+                        fila5[q] = aleatorio;
+                        
+                    }
+                   
+
+                    for (var r = 1; r < 10; r++) {
+                        var aleatorio = Math.floor(Math.random() * (9 - 1 + 1) + 1);
+                        fila6[r] = aleatorio;
+                        
+                    }
+                    
+
+                    for (var s = 1; s < 10; s++) {
+                        var aleatorio = Math.floor(Math.random() * (9 - 1 + 1) + 1);
+                        fila7[s] = aleatorio;
+                        
+                    }
+                   
+
+                    for (var w = 1; w < 10; w++) {
+                        var aleatorio = Math.floor(Math.random() * (9 - 1 + 1) + 1);
+                        fila8[w] = aleatorio;
+                       
+                    }
+                    
+                    for (var z = 1; z < 10; z++) {
+                        var aleatorio = Math.floor(Math.random() * (9 - 1 + 1) + 1);
+                        fila9[z] = aleatorio;
+                       
+                    }
+                    
+                }
+                fila1Res += "</table>";
+
+                document.getElementById('aleatorioComplete').innerHTML = fila1Res;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="aleatorioComplete"></div>
+    </body>
+</html>
